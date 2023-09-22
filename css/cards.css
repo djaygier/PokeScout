@@ -1,9 +1,11 @@
 pages {
   position: absolute;
-  top: 15%;
-  display: flex;
+  top: 50%;
   justify-content: center;
   pointer-events: none;
+  width: 112vh;
+  height: 70vh;
+  transform: translatey(-50%);
 }
 
 pages > img {
@@ -19,9 +21,41 @@ pages > img {
   }
 }
 
-#page1 {
+page {
+  background-image: url("../media/binder.svg");
+  display: block;
+  width: 56vh;
+  height: 70vh;
+}
+
+pages > * {
+  position: absolute;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+#page2 {
   transform-origin: center right;
   animation: nextpage 2s;
   perspective: 10000px;
   transform: rotatey(0deg);
+}
+
+#page3 {
+  transform: scaleX(-1);
+}
+
+controls {
+  transform: translateY(50px);
+  bottom: 0;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  width: 100%;
 }
