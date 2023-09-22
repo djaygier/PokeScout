@@ -1,0 +1,27 @@
+pages {
+  position: absolute;
+  top: 15%;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+pages > img {
+  height: 70vh;
+}
+
+@keyframes nextpage {
+  from {
+    transform: rotatey(0deg);
+  }
+  to {
+    transform: rotatey(180deg);
+  }
+}
+
+#page1 {
+  transform-origin: center right;
+  animation: nextpage 2s;
+  perspective: 10000px;
+  transform: rotatey(0deg);
+}
