@@ -1,0 +1,38 @@
+cards {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 32px;
+}
+
+card img {
+  width: 240px;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.price {
+  opacity: 0.5;
+}
+
+card {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+card:hover {
+  filter: brightness(0.85);
+}
+
+card input {
+  width: 40px;
+}
+
+#buy-cart {
+  width: 200px;
+  margin-bottom: 20px;
+}

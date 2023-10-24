@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PokeScout | Home</title>
+    <title>PokeScout | Cart</title>
 
     <link rel="icon" href="media/logo.svg" type="image/svg+xml" />
 
@@ -15,12 +15,14 @@
       rel="stylesheet"
     />
     <script src="js/index.js"></script>
+    <script src="js/cart.js"></script>
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cart.css" />
   </head>
-  <body onload="setNewCount();">
-    <img src="media/pickachu.svg" id="pickachu" />
-    <main class="row">
+
+  <body onload="setNewCount(); getCartItems(); countTotals();">
+    <main class="column">
       <nav>
         <a href="index.html"><nav-button>Home</nav-button> </a>
         <a href="cards.php"><nav-button>Cards</nav-button></a>
@@ -31,19 +33,11 @@
         ></a>
       </nav>
 
-      <front>
-        <h1>Gotta Catch 'Em All!</h1>
-        <h2>
-          Pokémon is a Japanese media franchise consisting of video games,
-          animated series and films, a trading card game, and other related
-          media.
-        </h2>
-      </front>
-
-      <footer class="absolute">
-        © 2023 <a target="_blank" href="https://djay.nl/">Djay.nl</a>, All
-        rights reserved.
-      </footer>
+      <cards></cards>
+      <form action="php/add.php" method="post" onsubmit="">
+        <input type="hidden" id="items" name="items" value="" />
+        <button id="buy-cart">Buy cart</button>
+      </form>
     </main>
   </body>
 </html>

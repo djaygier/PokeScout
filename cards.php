@@ -13,19 +13,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
     rel="stylesheet" />
+  <script src="js/index.js"></script>
 
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/cards.css" />
 </head>
 
-<body>
+<body onload="setNewCount();">
   <main class="column">
     <nav>
       <a href="index.html"><nav-button>Home</nav-button> </a>
       <a href="cards.php"><nav-button>Cards</nav-button></a>
       <img id="logo" src="media/logo.svg" />
-      <nav-button>Contact</nav-button>
-      <nav-button>Cart</nav-button>
+      <a href="contact.html"><nav-button>Contact</nav-button></a>
+      <a href="cart.html"><nav-button>Cart<count></count></nav-button></a>
     </nav>
 
     <cards>

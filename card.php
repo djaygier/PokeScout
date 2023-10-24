@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PokeScout | Cards</title>
+  <title>PokeScout | Card</title>
 
   <link rel="icon" href="media/logo.svg" type="image/svg+xml" />
 
@@ -15,19 +15,20 @@
     rel="stylesheet" />
 
   <script src="js/cart.js"></script>
+  <script src="js/index.js"></script>
 
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/card.css" />
 </head>
 
-<body>
+<body onload="setNewCount();">
   <main class="column">
     <nav>
       <a href="index.html"><nav-button>Home</nav-button> </a>
       <a href="cards.php"><nav-button>Cards</nav-button></a>
       <img id="logo" src="media/logo.svg" />
-      <nav-button>Contact</nav-button>
-      <nav-button>Cart</nav-button>
+      <a href="contact.html"><nav-button>Contact</nav-button></a>
+      <a href="cart.html"><nav-button>Cart<count></count></nav-button></a>
     </nav>
 
     <card-view>
@@ -65,7 +66,7 @@
         }
         echo "<div class='price'>€{$row['price']}</div>";
         echo "<div class='desc'>{$row['desc']}</div>";
-        echo "<button onclick='addToCart(\"{$_GET['id']}\");'>Add to cart</button>";
+        echo "<button onclick='addToCart(\"{$_GET['id']}\", \"{$row['name']}\", \"{$row['price']}\", \"{$row['image']}\");'>Add to cart</button>";
 
         echo "</column>";
         echo "</row>";

@@ -1,0 +1,12 @@
+p {
+  width: 500px;
+  position: relative;
+}
+
+text {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+}
