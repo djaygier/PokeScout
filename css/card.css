@@ -1,0 +1,16 @@
+card-view {
+  margin-top: 100px;
+  display: flex;
+}
+
+card-view row {
+  gap: 40px;
+}
+
+.name {
+  font-size: 70px;
+}
+
+.price {
+  font-size: 40px;
+}
