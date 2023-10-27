@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
     rel="stylesheet" />
+
   <script src="js/index.js"></script>
 
   <link rel="stylesheet" href="css/style.css" />
@@ -28,6 +29,12 @@
       <a href="contact.html"><nav-button>Contact</nav-button></a>
       <a href="cart.html"><nav-button>Cart<count></count></nav-button></a>
     </nav>
+
+    <form action="php/login.php" method="post">
+      <input type="text" name="username" placeholder="Username" />
+      <input type="text" name="password" placeholder="Wachtwoord" />
+      <input type="submit" value="Login">
+    </form>
 
     <cards>
       <?php
@@ -48,10 +55,10 @@
       $ret = $db->query($sql);
       while ($row = $ret->fetchArray(SQLITE3_ASSOC)) {
         echo "<card onclick='document.location = \"card.php?id={$row['id']}\";'>";
-        echo "<img loading='lazy' src='media/{$row['image']}'>";
+        echo "<img loading='lazy' src='{$row['image']}'>";
         echo "<row>";
         echo "<div class='name'>{$row['name']}</div>";
-        echo "<div class='set'>Set {$row['set']}</div>";
+        echo "<div class='set'>Set {$row['collection']}</div>";
         echo "</row>";
         echo "<row>";
 
