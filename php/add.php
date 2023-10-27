@@ -21,6 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 }
-header("Location: ../cart.html");
+header("Location: ../cart.html?status=success");
 exit;
 ?>

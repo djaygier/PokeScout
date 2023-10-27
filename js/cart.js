@@ -124,3 +124,12 @@ function countTotals() {
 
   document.getElementById("items").value = JSON.stringify(cartList);
 }
+
+function oncartload() {
+  const queryString = window.location.search;
+  if (queryString == "?status=success") {
+    cartList = [];
+    document.cookie = `cart=[];expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
+    document.location = "cart.html";
+  }
+}
