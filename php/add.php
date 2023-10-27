@@ -17,9 +17,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $items = $_POST['items'];
     $sql = "INSERT INTO bestellingen (items) VALUES ('$items')";
     $ret = $db->exec($sql);
-
-
-
 }
 header("Location: ../cart.html?status=success");
 exit;

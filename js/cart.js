@@ -42,8 +42,6 @@ function getCartItems() {
   cartList = JSON.parse(cartList[0].split("=")[1]);
 
   for (let i = 0; i < cartList.length; i++) {
-    console.log(cartList[i]["name"]);
-
     let cards = document.querySelector("cards");
 
     let card = document.createElement("card");
