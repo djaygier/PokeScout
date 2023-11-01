@@ -32,8 +32,14 @@
 
     <form action="php/login.php" method="post">
       <input type="text" name="username" placeholder="Username" />
-      <input type="text" name="password" placeholder="Wachtwoord" />
+      <input type="password" name="password" placeholder="Wachtwoord" />
       <input type="submit" value="Login">
+    </form>
+
+    <form action="php/signup.php" method="post">
+      <input type="text" name="username" placeholder="Username" />
+      <input type="password" name="password" placeholder="Wachtwoord" />
+      <input type="submit" value="Maak account aan">
     </form>
 
     <cards>

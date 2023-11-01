@@ -53,7 +53,7 @@
         echo "<row>";
         echo "<column>";
 
-        echo "<img src='media/{$row['image']}'>";
+        echo "<img src='{$row['image']}'>";
 
         echo "</column>";
 

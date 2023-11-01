@@ -48,7 +48,7 @@ function getCartItems() {
     cards.append(card);
 
     let image = document.createElement("img");
-    image.src = `media/${cartList[i]["image"]}`;
+    image.src = cartList[i]["image"];
     card.append(image);
 
     let row = document.createElement("row");

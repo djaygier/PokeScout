@@ -24,6 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO products (name, price, image, language, collection, id, desc) VALUES ('$name', '$price', '$image', '$language', '$collection', '$id', '$desc')";
     $ret = $db->exec($sql);
 }
-header("Location: ../cards.php");
+header("Location: ../admin.php");
 exit;
 ?>

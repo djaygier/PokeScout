@@ -161,3 +161,14 @@ count {
   padding-left: 5px;
   padding-right: 5px;
 }
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: #787777;
+}
