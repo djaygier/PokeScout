@@ -33,7 +33,7 @@
 
     <form action="php/add_product.php" method="post" id="admin-form">
       <input type="text" name="name" placeholder="Naam" />
-      <input type="text" name="price" placeholder="Prijs" />
+      <input type="number" name="price" placeholder="Prijs" />
       <input type="text" name="image" placeholder="Image URL" />
       <input type="text" name="language" placeholder="Taal" />
       <input type="text" name="collection" placeholder="Collection" />

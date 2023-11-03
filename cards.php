@@ -30,6 +30,10 @@
       <a href="cart.html"><nav-button>Cart<count></count></nav-button></a>
     </nav>
 
+    <uitleg>
+      Log in of maak een account om je eigen verzameling toe te voegen.
+    </uitleg>
+
     <form action="php/login.php" method="post">
       <input type="text" name="username" placeholder="Username" />
       <input type="password" name="password" placeholder="Wachtwoord" />
@@ -41,6 +45,10 @@
       <input type="password" name="password" placeholder="Wachtwoord" />
       <input type="submit" value="Maak account aan">
     </form>
+
+    <uitleg>
+      Verzamelingen van andere gebruikers
+    </uitleg>
 
     <cards>
       <?php
